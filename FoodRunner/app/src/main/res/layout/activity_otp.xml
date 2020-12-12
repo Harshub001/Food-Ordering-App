@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".activity.OtpActivity">
+
+    <RelativeLayout
+        android:id="@+id/progressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+        <ProgressBar
+            android:id="@+id/progressBarOtp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/staticOtp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/enter_the_received_otp_below"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardOtp"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_below="@id/staticOtp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="25dp"
+        android:background="#fff"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="7dp">
+
+        <EditText
+            android:id="@+id/edtEnterOtp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:hint="@string/otp_4_char"
+            android:inputType="text"
+            android:maxLength="4"
+            android:maxLines="1"
+            android:padding="6dp"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardNewPass"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_below="@id/cardOtp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:background="#fff"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="7dp">
+
+        <EditText
+            android:id="@+id/edtEnterNewPass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="10dp"
+            android:hint="@string/new_password"
+            android:inputType="textPassword"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:padding="6dp"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardEnterCnfPass"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_below="@id/cardNewPass"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:background="#fff"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="7dp">
+
+        <EditText
+            android:id="@+id/edtEnterCnfPass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/cnf_pass"
+            android:inputType="textPassword"
+            android:layout_marginHorizontal="10dp"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:padding="6dp"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            />
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#0639A8"
+        android:elevation="4dp"
+        android:text="@string/submit"
+        android:layout_below="@id/cardEnterCnfPass"
+        android:layout_marginTop="23dp"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

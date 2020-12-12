@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/llStaticOrderHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="10dp"
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/txtResName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3.5"
+            android:background="#ffffff"
+            android:padding="5dp"
+            android:text="Restaurant Name"
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#000000"
+
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtOrderDate"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="40dp"
+            android:background="#ffffff"
+            android:padding="5dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:text="16/05/2020"
+            android:textAlignment="center"
+            />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerResHistory"
+        android:layout_width="match_parent"
+        android:layout_below="@id/llStaticOrderHistory"
+        android:layout_height="wrap_content"
+
+        android:padding="5dp" />
+
+    <View
+        android:layout_below="@id/recyclerResHistory"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#b5b5b5"/>
+
+
+
+
+    </RelativeLayout>

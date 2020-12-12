@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary">
+<ImageView
+    android:id="@+id/imgTick"
+    android:layout_width="130dp"
+    android:layout_height="130dp"
+    android:layout_centerInParent="true"
+    android:src="@drawable/ic_check_24dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/your_order_has_been_successfully_placed"
+        android:textColor="#ffffff"
+        android:layout_below="@id/imgTick"
+        android:layout_centerInParent="true"
+        android:textSize="15sp"/>
+   <androidx.cardview.widget.CardView
+       android:layout_width="100dp"
+       android:layout_height="50dp"
+       android:layout_alignParentBottom="true"
+       android:layout_centerHorizontal="true"
+       android:background="#ffffff"
+       android:layout_marginBottom="20dp"
+       app:cardCornerRadius="6dp">
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="94dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center"
+        android:background="#0BD34A"
+        android:text="@string/ok"
+        android:textColor="#ffffff"
+        android:textSize="19sp"/>
+   </androidx.cardview.widget.CardView>
+</RelativeLayout>

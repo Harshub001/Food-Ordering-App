@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">FoodSensations</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <string name="message">FoodSensation</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Don\'t have an account? Sign up now</string>
+    <string name="mobile_number">Mobile Number(10 digits)</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name_of_restaurants">Name of Restaurants</string>
+    <string name="_200_person">₹ 200/person</string>
+    <string name="_4_5">4.5</string>
+    <string name="todo">TODO</string>
+    <string name="_200">200</string>
+    <string name="_">₹</string>
+    <string name="_person">/person</string>
+    <string name="register_yourself">Register Yourself</string>
+    <string name="enter_name">Name(Min. 3 characters)</string>
+    <string name="enter_email">Email Address</string>
+    <string name="enter_mobile">Mobile Number (10 digits)</string>
+    <string name="enter_address">Delivery Address</string>
+    <string name="enter_password">Password (6 characters)</string>
+    <string name="enter_cnfpassword">Confirm Password</string>
+    <string name="register_button">Register</string>
+    <string name="pref_file_name">FoodrunnerPreferences</string>
+    <string name="statement_forgot">Enter your registered mobile number and email below:</string>
+    <string name="next">NEXT</string>
+    <string name="name">Name</string>
+    <string name="mobile">Mobile</string>
+    <string name="email">Email</string>
+    <string name="address">Address</string>
+    <string name="otp_4_char">OTP (4 characters)</string>
+    <string name="new_password">"New Password (6 characters) "</string>
+    <string name="cnf_pass">Confirm Password</string>
+    <string name="submit">Submit</string>
+    <string name="choose_from_menu_listed_below">Choose from menu listed below:</string>
+    <string name="rs">Rs.</string>
+    <string name="food_name">Food Name</string>
+    <string name="faq_answer_one">A.1 Order is deliverd by our dedicated delivery boys.
+    </string>
+    <string name="faq_answer_two">A.2 We are on 24*7.
+    </string>
+    <string name="faq_answer_four">A.4 You can only cancel your order till the restaurant not accepted your order,if you cancel after the accepted there is no refund given to you.
+    </string>
+    <string name="faq_answer_three">A.3 Our maximum delivery time is one hour if we can not do that you will got 50% cashback .</string>
+    <string name="faq_answer_five">A.5 You can pay online(upi,wallet etc) or you can opt for cash on delivery.
+    </string>
+    <string name="faq_answer_six">A.6 You can write us a mail on @support.foodsensations .
+    </string>
+    <string name="add">ADD</string>
+    <string name="proceed_to_cart">Proceed to cart</string>
+    <string name="enter_the_received_otp_below">Enter the received OTP below</string>
+    <string name="sort">action_sort</string>
+    <string name="remove">Remove</string>
+    <string name="food_item">Food Item</string>
+    <string name="ordering_from">Ordering From :</string>
+    <string name="ok">Ok</string>
+    <string name="your_order_has_been_successfully_placed">Your order has been successfully placed!</string>
+    <string name="you_do_not_have_any_favorite_restaurants">You do not have any favorite restaurants</string>
+    <string-array name="sorting_option">
+        <item>Cost(Low to High)</item>
+        <item>Cost(High to Low)</item>
+        <item>Rating</item>
+    </string-array>
+</resources>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="activity.RegisterActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="0dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    <EditText
+        android:id="@+id/edtEnterName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="100dp"
+        android:background="#ffffff"
+        android:drawableStart="@drawable/person_clip"
+        android:drawablePadding="10dp"
+        android:hint="@string/enter_name"
+        android:inputType="text"
+        android:maxLines="1"
+        android:paddingStart="10dp"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/edtEnterEmail"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_below="@id/edtEnterName"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:drawableStart="@drawable/email_clip"
+        android:drawablePadding="10dp"
+        android:hint="@string/enter_email"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:paddingStart="10dp"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/edtEnterMobile"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_below="@id/edtEnterEmail"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:drawableStart="@drawable/mobile_clip"
+        android:drawablePadding="10dp"
+        android:hint="@string/enter_mobile"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:paddingStart="10dp"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/edtEnterAddress"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_below="@id/edtEnterMobile"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:drawableStart="@drawable/location_clip"
+        android:drawablePadding="10dp"
+        android:hint="@string/enter_address"
+        android:inputType="textPostalAddress"
+        android:maxLines="1"
+        android:paddingStart="10dp"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/edtEnterPassword"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_below="@id/edtEnterAddress"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:drawableStart="@drawable/lock_clip"
+        android:drawablePadding="10dp"
+        android:hint="@string/enter_password"
+        android:inputType="textPassword"
+        android:maxLength="6"
+        android:paddingStart="10dp"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/edtEnterConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_below="@id/edtEnterPassword"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:drawableStart="@drawable/lock_clip"
+        android:drawablePadding="10dp"
+        android:hint="@string/enter_cnfpassword"
+        android:inputType="textPassword"
+        android:maxLength="6"
+        android:paddingStart="10dp"
+        tools:ignore="RtlSymmetry" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/edtEnterConfirmPassword"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:background="#0639A8"
+        android:text="@string/register_button"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
